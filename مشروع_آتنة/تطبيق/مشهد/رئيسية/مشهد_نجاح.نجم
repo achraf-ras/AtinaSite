@@ -1,0 +1,37 @@
+<style>
+#payementValidatedSection {
+    width: 30%;
+    height: 20%;
+    border: 1px solid gray;
+    position: fixed;
+    /**top: 50%;**/
+    /**bottom: 25%;**/
+    z-index: 1000;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    background-color: rgba(0,0,0,.6);
+    background-image: url('../img/dark-wall.png');
+    color: white;
+    font-size: 18px;
+    bottom: -1000px;
+}
+
+#payementValidatedSection .fa {
+    font-size: 40px;
+    line-height: 50px;
+}
+</style>
+
+<section id="payementValidatedSection">
+	<span class="fa fa-thumbs-o-up"></span>
+	<span>تمت المعاملة بنجاح!</span><br>
+	<span>جاري الانتقال إلى الطلب الموالي...</span>
+</section>

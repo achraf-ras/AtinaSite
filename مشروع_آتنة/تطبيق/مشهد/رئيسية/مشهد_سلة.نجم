@@ -1,0 +1,40 @@
+<style>	
+#orderList {
+	border-spacing:0px;
+    width: 70%;
+    height: 40%;
+    max-height: 40%;
+    overflow: hidden;
+    background-color: #D8D8D8;
+    background-image: repeating-linear-gradient(45deg, transparent 0px, rgba(0, 0, 0, 0.016) 5px), repeating-linear-gradient(-45deg, transparent 0px, rgba(0, 0, 0, 0.016) 5px);
+    color: #333333;
+    float: right;
+    border-bottom: 2px solid #C8C8C8;
+}
+</style>
+
+  <table class="fixedHeaders">
+	<thead class="metal">
+		<tr>
+			<th>المنتج</th>
+			<th>الكمية</th>
+			<th>ثمن الوحدة</th>
+			<th>المجموع</th>
+		</tr> 
+	</thead>
+  </table>
+  <div class="tableRowsContainer">
+  <table class="fixedHeaders">
+	<tbody>
+		[[منتجات]]
+		<tr>
+			<td>{{تسمية}}</td>
+			<td class="num"><div class="right fa fa-minus-circle" onClick="$('#orderList').load('/سلة/أزل/{{ريف}}');"></div>{{كمية}}<div class="left fa fa-plus-circle" onClick="$('#orderList').load('/سلة/أضف/{{ريف}}');"></div></td>
+			<td class="num"><input type="number" value="{{ثمن}}" /></td>
+			<td class="num">{{مجموع}}</td>
+		</tr>
+		[[تم]]
+	</tbody>
+  </table>
+  </div>
+ 

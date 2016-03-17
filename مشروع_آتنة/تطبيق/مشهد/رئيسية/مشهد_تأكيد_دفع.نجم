@@ -1,0 +1,58 @@
+<style>
+.validatePayementSection {
+    height: 94%;
+    width: 76%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.6);
+
+    background-image: url('../img/dark-wall.png');
+    z-index: 999;
+    position: relative;
+    color: white;
+    padding-top: 30px;
+    top: -1000px;
+}
+.vpTendered {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.vpPrice {
+    font-size: 120px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 90px;
+    padding-bottom: 20px;
+    font-family: 'Bebas', sans-serif;
+}
+
+.vpTotal {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+    width: 70%;
+    margin: 0 auto;
+}
+</style>
+
+<section class="validatePayementSection">
+	<div class="vpTendered">المبلغ المقبوض</div>
+	<div class="vpPrice">0.00</div>
+	<div class="vpTotal">الإجمالي: <span class="num">134.34</span><br>
+		الصرف: <span class="num">22.20</span></div>
+	
+	<div class="calc">
+		<table>
+			<tr><td>1</td><td>2</td><td>3</td></tr>
+			<tr><td>4</td><td>5</td><td>6</td></tr>
+			<tr><td>7</td><td>8</td><td>9</td></tr>
+			<tr><td>0</td><td>00</td><td><img src="img/clear.png"></td></tr>
+		</table>
+	</div>
+	<div class="chargeBtn greenBtn" onclick="validatePayementClick()">تأكيد</div>
+	<div class="tensBtn"><div class="greenBtn">5.00</div><div class="greenBtn">10.00</div><div class="greenBtn">20.00</div></div>
+</section>

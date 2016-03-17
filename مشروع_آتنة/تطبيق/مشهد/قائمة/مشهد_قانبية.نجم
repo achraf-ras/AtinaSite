@@ -1,0 +1,88 @@
+<style>
+#sideMenu {
+    height: 100%;
+    z-index: 121;
+    background: #8B8B8B;
+    width: 30%;
+    right:-50%;
+  
+    background-image: -ms-linear-gradient(right, #576B69 0%, #7A808C 70%);
+    background-image: -moz-linear-gradient(right, #576B69 0%, #7A808C 70%);
+    background-image: -o-linear-gradient(right, #576B69 0%, #7A808C 70%);
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #576B69), color-stop(70, #7A808C));
+    background-image: -webkit-linear-gradient(right, #576B69 0%, #7A808C 70%);
+    background-image: linear-gradient(to left, #576B69 0%, #7A808C 70%);
+}
+
+#mainMenu, #mainMenu ul {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.mainLi {
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 15px;
+    background-color: #4C5457;
+}
+
+.subLi {
+    color: white;
+    font-weight: normal;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 44px;
+    border-bottom: 2px solid gray;
+}
+
+.subLi span {
+    padding-right: 20px;
+    font-size: 28px;
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+.subLi.active, .subLi:hover {
+    color: #BCD52F;
+    background-color: #808080; /* #707477; */
+}
+</style>
+
+
+<aside id="sideMenu">
+  <ul id="mainMenu">
+	<li><div class="mainLi">المبيعات</div>
+		<ul>
+			<li class="subLi first" onClick="showOpenOrders(this)"><span class="fa fa-shopping-cart"></span>الطلبات المفتوحة</li>
+			<li class="subLi" onClick="showSalesRegister(this)"><span class="fa fa-book"></span>سجِل المبيعات</li>
+		</ul> 
+	</li>
+	  <li><div class="mainLi">المخزون</div>
+		<ul>
+			<li class="subLi" onClick="showCategoryList(this)"><span class="fa fa-th-large"></span>إدارة التصنيفات</li>
+			<li class="subLi" onClick="showProductList(this)"><span class="fa fa-archive"></span>إدارة المنتجات</li>
+		</ul> 
+	</li>
+	<li><div class="mainLi">الأموال</div>
+		<ul>
+			<li class="subLi" onClick="showSalePeriodsView(this);"><span class="fa fa-history"></span>فترات البيع</li>
+			<li class="subLi" onClick="showCashDrawerView(this);"><span class="fa fa-inbox"></span>خزنة النقود</li>
+			<li class="subLi" onClick="showSalesStats(this)"><span class="fa fa-bar-chart"></span>تقرير الطلبات</li>
+		</ul> 
+	</li>
+	<li><div class="mainLi">الإعدادات</div>
+		<ul>
+			<li class="subLi" onClick="showPrinterSetup(this);"><span class="fa fa-print"></span>إعداد الطابعة</li>
+			<li class="subLi" onClick="showUsersView(this);"><span class="fa fa-users"></span>المستخدِمون</li>
+			<li class="subLi" onClick="showَAddonView(this);"><span class="fa fa-cubes"></span>الإضافات</li>
+		</ul> 
+	</li>
+	<li><div class="mainLi">المساعدة</div>
+		<ul>
+			<li class="subLi"><span class="fa fa-exclamation-circle"></span>عن هذا الجهاز</li>
+		</ul> 
+	</li>
+  </ul>
+</aside>

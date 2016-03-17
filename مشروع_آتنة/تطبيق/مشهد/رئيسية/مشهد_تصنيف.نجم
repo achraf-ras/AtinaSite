@@ -1,0 +1,68 @@
+
+	<div id="catList">
+		[[تصنيفات]]
+			<div class="catItem" onClick="categoryClick({{ريف}})"><span>{{تسمية}}</span></div>
+		[[تم]]
+	</div>  
+
+<script>
+function categoryClick(id) {
+	$('#productList').load('/منتجات/لوحة/' + id, function() {
+		$('#productContainer').masonry({ "itemSelector": ".productSquare", "columWidth": 100, "gutter": 20, "isFitWidth": true, "isOriginLeft": false });
+	});
+}
+</script>
+
+<style>
+#catList {
+    height: 12%;
+    background-color: black;
+    width: 1820px;
+}
+
+.catItem {
+    height: 100%;
+    color: white;
+    background-color: #4F595A;
+    text-align: center;
+    width: 180px;
+    float: right;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+	position: relative;
+    font-weight: bold;
+    cursor: pointer;   
+}
+
+#catSection {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.catItem span {
+    top: 10%;
+    position: relative;
+}
+
+.catItem.up-arrow {
+    background-color: white;
+    color: black;
+}
+
+.up-arrow:after {
+	content: '';
+	display: block;  
+	position: absolute;
+	right: 42%;
+	bottom: 100%;
+	width: 0;
+	height: 0;
+	border-bottom: 15px solid white;
+	border-top: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+</style>
+
+</article>

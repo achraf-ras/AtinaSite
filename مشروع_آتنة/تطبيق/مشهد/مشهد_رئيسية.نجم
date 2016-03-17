@@ -1,0 +1,27 @@
+<article>
+<section id="orderList">
+	<script>
+		$('#orderList').load('/سلة');
+	</script>
+</section>
+
+<section id="totalView">
+	<script>
+		$('#totalView').load('/سلة/حصيلة');
+	</script>
+</section>
+
+<section id="productList">
+	<script>
+		$('#productList').load('/منتجات/لوحة/1', function() {
+			$('#productContainer').masonry({ "itemSelector": ".productSquare", "columWidth": 100, "gutter": 20, "isFitWidth": true, "isOriginLeft": false });
+		});
+	</script>
+</section>
+
+<section id="catSection">
+	<script>
+		$('#catSection').load('/تصنيفات/شريط');
+	</script>
+</section>
+

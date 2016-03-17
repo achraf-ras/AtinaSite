@@ -1,0 +1,70 @@
+<div class="dataTableHeader">
+  <table class="dataTableHeadRow">
+	  <tr>
+		<td style="width:8%">&nbsp</td>
+		<td style="width:30%">الإسم الكامل</td>
+		<td style="width:30%">اسم المستخدم</td>
+		<td style="width:30%">الشارة</td>
+		<td style="width:2%" class="action">&nbsp;</td>
+	  </tr>
+  </table>
+</div>
+
+<div class="dataTableContainer">
+
+<div class="sideSideContainer">
+<div class="dataTableBody">
+	<table class="dataTable">
+		<tr onclick="listItemClick()">
+		<td style="width:8%"><div class="fa fa-user"></div></td>
+		<td style="width:30%">أشرف راس</td>
+		<td style="width:30%">أشرس</td>
+		<td style="width:30%">مسؤول</td>
+			<td style="width:2%" class="action"><span class="fa fa-chevron-left"></span></td>
+		</tr>
+		
+		<tr onclick="listItemClick()">
+		<td style="width:8%"><div class="fa fa-user"></div></td>
+		<td style="width:30%">أشرف راس</td>
+		<td style="width:30%">أشرس</td>
+		<td style="width:30%">مسؤول</td>
+			<td style="width:2%" class="action"><span class="fa fa-chevron-left"></span></td>
+		</tr>
+	   
+	</table>
+</div>
+	
+<div class="dataTableFormBody">
+	<div class="dataTableFormTitle">معاينة/تعديل مستخدم</div>
+	<table class="dataTableForm">
+		<tr><td><label for="name">الاسم الكامل</label></td>
+			<td><input class="basic-slide" id="name" type="text" placeholder="أدخل الاسم الكامل (الاسم والنسب)" /></td>
+		</tr>
+		
+		<tr><td><label for="barcode">اسم المستخدم</label></td>
+			<td><input class="basic-slide" id="barcode" type="text" placeholder="أدخل اسم المستخدم (كلمة واحدة)" /></td>
+		</tr>
+		
+		<tr><td><label for="barcode">كلمة المرور</label></td>
+			<td><input class="basic-slide" id="barcode" type="password" />
+		</td></tr>
+		
+		<tr><td><label for="price">الشارة</label></td>
+			<td><select id="category" class="basic-slide">
+				<option value="1">بائع</option>
+				<option value="2">بائع مراقب</option>
+				<option value="3">مسؤول</option>
+			</select>
+		</td></tr>
+	
+	</table>
+	
+	<div class="dataTableFormBtns">
+		<div class="redBtn fa fa-times" onclick=""><span>حذف</span></div>
+		<div class="greenBtn fa fa-check left"><span>تأكيد التعديلات</span></div>
+		<div class="blueBtn fa fa-share left" onclick="backToList()"><span>عودة إلى اللائحة</span></div>
+	</div>
+</div> <!--dataTableFormBody-->
+	
+</div> <!-- side side -->
+</div> <!-- container -->

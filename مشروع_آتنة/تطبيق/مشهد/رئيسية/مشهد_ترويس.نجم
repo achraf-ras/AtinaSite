@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/نورماليز.سمة" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/خط_أوسوم.سمة">
+    <link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/جكويري_ور.سمة">     
+    <link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/ميلون_منتقي_تاريخ.سمة" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/سمة_عامة.سمة" />
+      
+    <script type="text/javascript" src="/عام/جافاسكربت/جكويري.جس"></script>
+    <script type="text/javascript" src="/عام/جافاسكربت/ماسونري.جس"></script>
+    <script type="text/javascript" src="/عام/جافاسكربت/جكويري-كينتيك.جس"></script>
+    <script type="text/javascript" src="/عام/جافاسكربت/جكويري-ورس.جس"></script>
+    <script type="text/javascript" src="/عام/جافاسكربت/منتقي-تاريخ-عربي.جس"></script>
+    <!-- charts -->
+    <script type="text/javascript" src="/عام/جافاسكربت/هايشارتس.جس"></script>
+    <!-- end charts -->
+    <script type="text/javascript" src="/عام/جافاسكربت/آتنة.جس"></script>
+    <script type="text/javascript" src="/عام/جافاسكربت/هامر.جس"></script>
+    <script type="text/javascript" src="/عام/جافاسكربت/جكويري-هامر.جس"></script>
+	<title>آتنة - أصول للأنظمة الذكية</title>
+	
+
+  </head>
+  
+<body>
+	<style>
+		header {
+			height: 6%;
+			background-color: black;
+		}
+		
+		#headerMenu {
+		 height: 100%;
+		}
+
+		.menuIcon {
+			height: 6%;
+			width: 40px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column; 
+			cursor: pointer;
+			position: absolute;
+			right: 10px;
+		}
+
+		.menuIcon .clicked {
+			display: none   
+		}
+
+		.logoIcon {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+			width: 71px;
+			height: 6%;
+			position: absolute;
+			left:0;
+			right:0;
+			margin-left:auto;
+			margin-right:auto;
+
+		}
+
+		.lockIcon {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+			width: 32px;
+			height: 6%;
+			position: absolute;
+			left: 10px;
+			cursor: pointer;
+		}
+	</style>
+	<header>
+		<div id="headerMenu">
+			<div class="menuIcon" onClick="menuClick()"><img src="/عام/صور/أيقو_قائمة.بنج"></div>
+			<div class="logoIcon"><img src="/عام/صور/شعار.بنج"></div>
+			<div class="lockIcon" onClick="window.location.href='دخول'"><img src="/عام/صور/أيقو_قفل.بنج"></div>
+		</div>
+	</header>
+	
+	<div class="cover"></div>

@@ -1,0 +1,141 @@
+<script type="text/javascript">
+$(function () {
+    $('.productSalesChart').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'المنتجات الأكثر مبيعًا',
+            style: {
+                    fontFamily: 'Droid Arabic Kufi',
+            }
+        },
+        subtitle: {
+            text: 'بيان نسب المبيعات للمنتجات الأكثر مبيعًا لديكم',
+            style: {
+                    fontFamily: 'Droid Arabic Kufi',
+            }
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                align: 'left',
+                y: 10,
+                style: {
+                    fontFamily: 'Droid Arabic Kufi',
+                    fontSize: '10px'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'نسب البيع (وحدات)',
+                style: {
+                    fontFamily: 'Droid Arabic Kufi',
+                }
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: [{
+            name: 'المنتجات',
+            data: [
+                ['حليب خالي الدسم', 23.7],
+                ['سميد غليض', 16.1],
+                ['رقائق شيبس', 14.2],
+                ['طاغير', 14.0],
+                ['كوكا 1لتر', 12.5],
+                ['سبوفي', 12.1],
+                ['حليب كامل نصف لتر', 11.8],
+                ['خبز عادي', 11.7],
+                ['خبز سميد', 11.1],
+                ['خبز قمح', 11.1],
+                ['زيتون', 10.5]
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Droid Arabic Kufi',
+                }
+            }
+        }]
+    });
+});
+</script>
+
+<div id="statsContainer">
+    
+    <div class="statSquares">
+    <div class="statSquare">
+        <img class="bgGreen" src="img/stats1.png" />
+        <div class="statSquareTitle">المداخيل</div>
+        <div class="statSquareAmount">1624.00</div>
+    </div>
+    <div class="statSquare">
+        <img class="bgBlue" src="img/stats2.png" />
+        <div class="statSquareTitle">الطلبات</div>
+        <div class="statSquareAmount">28</div>
+    </div>
+    <div class="statSquare">
+        <img class="bgOrange" src="img/stats3.png" />
+        <div class="statSquareTitle">الوحدات المباعة</div>
+        <div class="statSquareAmount">345</div>
+    </div>
+    </div>
+    
+    <div class="orderSummery">
+        <div class="orderSummeryHeader">ملخص طلبات هذا اليوم</div>
+        <div class="orderSymmeryContent">
+            <div class="orderSummeryTitle">الطلبات</div>
+            <div class="orderSummeryBigBox right">
+                <div class="statSquareAmount">28</div>
+                <div class="statSquareTitle">إجمالي الطلبات</div>
+            </div>
+            <div class="orderSummeryBigBox left">
+                <div class="statSquareAmount">1624.00</div>
+                <div class="statSquareTitle">إجمالي المداخيل</div>
+            </div>
+            <div class="orderSummeryTable">
+                <div class="orderSummeryTableCol">
+                    <span class="statSquareTitle">المفتوحة</span><br>
+                    <span class="statSquareAmount">6</span>
+                </div>
+                <div class="orderSummeryTableCol">
+                    <span class="statSquareTitle">المغلقة</span><br>
+                    <span class="statSquareAmount">324</span>
+                </div>
+                <div class="orderSummeryTableCol">
+                    <span class="statSquareTitle">كلفة التوريد</span><br>
+                    <span class="statSquareAmount">3498.43</span>
+                </div>
+                <div class="orderSummeryTableCol">
+                    <span class="statSquareTitle">القيمة المضافة</span><br>
+                    <span class="statSquareAmount">1200</span>
+                </div>
+                <div class="orderSummeryTableCol">
+                    <span class="statSquareTitle">الضرائب</span><br>
+                    <span class="statSquareAmount">645.20</span>
+                </div>
+                <div class="orderSummeryTableCol">
+                    <span class="statSquareTitle">الربح الصافي</span><br>
+                    <span class="statSquareAmount">701.34</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="productSalesChart">
+        
+    </div>
+    
+    
+</div>

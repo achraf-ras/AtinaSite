@@ -1,0 +1,172 @@
+$(function() {
+	//$('#productList').dragScroll({});
+    //$('#catSection').dragScroll({});
+    //$('.tableRowsContainer').dragScroll({});
+    
+    $('#productList').kinetic();
+    $('#catSection').kinetic();
+    $('.tableRowsContainer').kinetic();
+    
+    $( "#datepicker" ).datepicker($.datepicker.regional[ "ar" ]).datepicker('widget').wrap('<div class="ll-skin-melon"/>');
+    $( "#datepicker" ).datepicker("option", "dateFormat", "DD d MM yy");
+});
+
+//menu icon click handler
+var $menuVisible = false;
+function menuClick() {
+    $menuVisible = !$menuVisible;
+    $("body article").toggleClass('leftSlideArticle');  
+    //$(".menuSection").toggle("right:30%; left:0");
+    if ($menuVisible) { //show menu
+        $("body #sideMenu").css({"right":"0"});
+        $('.cover').fadeIn('fast', function(){   
+            $(".menuSection").animate({"top": "6%"}, "slow");
+            showOpenOrders($('.subLi.first'));
+        });
+    }else { //hide menu
+        $("body #sideMenu").css({"right":"-50%"});
+        $(".menuSection").animate({"top": "-100%"}, "slow", function() {
+             $('.cover').fadeOut('fast');
+        });
+    }   
+}
+
+// validate order main screen button click handler
+function validateOrderClick() {
+    $('.cover').fadeIn('fast', function(){   
+        $(".validatePayementSection").animate({"top": "0"}, "slow");
+    }); 
+}
+
+// validate payement button click handler
+function validatePayementClick() {
+    $(".validatePayementSection").animate({"top": "-1000px"}, "slow", function() {
+        $("#payementValidatedSection").animate({"bottom": "25%"}, "slow");
+    });
+    setTimeout(payementFinished, 4000);
+}
+
+// payement finished dialog show
+function payementFinished() {
+       $("#payementValidatedSection").animate({"bottom": "-1000px"}, "slow", function() {
+           $('.cover').fadeOut('fast');
+       });
+}
+
+// money drawer in/out next button click handler, shows comment box
+function moneyInOutNext() {
+    $('.calc').animate({"right": "-120%"}, "slow", function() {
+        $('.calc').hide();
+       // $('.moneyInOutDesc').show();
+        $('.moneyInOutDesc').animate({"left": "0px"}, "slow"); 
+    });
+}
+
+// product list item click handler, shows product edit screen
+function listItemClick() {
+        $('.dataTableBody').animate({"right": "-50%"}, "slow");
+        $('.dataTableFormBody').animate({"right": "-50%"}, "slow");
+}
+
+// back to product list button click handler, shows back product list
+function backToList() {
+        $('.dataTableBody').animate({"right": "0%"}, "slow");
+        $('.dataTableFormBody').animate({"right": "0%"}, "slow");
+}
+
+function showOpenOrders(e) {
+        setActiveMenu(e);
+        $('.menuSection').load('/طلبات/مفتوحة', function() {
+            $('.grid').masonry({ "itemSelector": ".itemGrid", "columWidth": 200, "gutter": 20, "isFitWidth": true, "isOriginLeft": false });
+        });
+}
+
+function showSalesRegister(e) {
+        setActiveMenu(e);
+        $('.menuSection').load('/طلبات/عرض', function() {
+            //adapt some widths
+            $('.dataTableHeadRow').width($('.dataTable').width());
+            $('.dataTableBody').kinetic();
+            $('.subList').kinetic();
+        });
+}
+
+function showCategoryList(e) {
+        setActiveMenu(e);
+        $('.menuSection').load('/تصنيفات/عرض', function() {
+            $('.dataTableHeadRow').width($('.dataTable').width());
+            $('.dataTableBody').kinetic();
+           /* $('.grid').masonry({ "itemSelector": ".itemGrid2", "columWidth": 160, "gutter": 16, "isFitWidth": true, "isOriginLeft": false });*/
+        });   
+}
+
+function showProductList(e) {
+        setActiveMenu(e);
+         $('.menuSection').load('/منتجات/عرض', function() {
+            //adapt some widths
+            $('.dataTableHeadRow').width($('.dataTable').width());
+            $('.dataTableBody').kinetic();
+            // touch events
+            $('.dataTableBody').hammer().on('panright', function(ev) {
+                listItemClick();
+            });
+         });  
+}
+
+function showCashDrawerView(e) {      
+         setActiveMenu(e);   
+         $('.menuSection').load('/خزنة/ملخص');
+}
+
+function showSalesStats(e) {
+        setActiveMenu(e);
+         $('.menuSection').load('/طلبات/تقرير');
+}
+
+function showCashDrawerViewNoSelect() {
+        $('.menuSection').load('/خزنة/ملخص');
+}
+
+function showDrawerInView() {          
+        $('.menuSection').load('/خزنة/مال_داخل');   
+}
+
+function showDrawerOutView() {          
+        $('.menuSection').load('/خزنة/مال_خارج');   
+}
+
+function showPrinterSetup(e) {
+        setActiveMenu(e);
+        $('.menuSection').load('/طابعات/عرض');   
+}
+
+
+function showSalePeriodsView(e) {
+        setActiveMenu(e);
+        $('.menuSection').load('/فترات/عرض', function() {
+            //adapt some widths
+            $('.dataTableHeadRow').width($('.dataTable').width());
+            $('.dataTableBody').kinetic();
+        });
+}
+
+function showUsersView(e) {
+        setActiveMenu(e);
+         $('.menuSection').load('/مستخدمون/عرض', function() {
+            $('.dataTableHeadRow').width($('.dataTable').width());
+            $('.dataTableBody').kinetic();
+        });      
+}
+
+function showَAddonView(e) {
+        setActiveMenu(e);
+         $('.menuSection').load('/إضافات/عرض', function() {
+            $('.dataTableHeadRow').width($('.dataTable').width());
+            $('.dataTableBody').kinetic();
+        });      
+}
+
+function setActiveMenu(itm) {
+        $('li.subLi').removeClass("active");
+        $(itm).addClass("active");
+}

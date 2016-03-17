@@ -1,0 +1,74 @@
+<div class="dataTableHeader">
+              <table class="dataTableHeadRow">
+                  <tr>
+                    <td style="width:5%">الأيام</td>
+                    <td style="width:23%">تاريخ الافتتاح</td>
+                    <td style="width:23%">تاريخ الإقفال</td>
+                    <td style="width:23%">عدد المعاملات</td>
+                    <td style="width:23%">مبلغ المعاملات</td>
+                    <td style="width:2%" class="action">&nbsp;</td>
+                  </tr>
+              </table>
+            </div>
+            
+            <div class="dataTableContainer">
+			
+			<div class="sideSideContainer">
+            <div class="dataTableBody">
+                <table class="dataTable">
+                    <tr onclick="listItemClick()">
+                        <td style="width:5%">4</td>
+                        <td style="width:23%; font-weight:normal">الاثنين 5 يناير 2015</td>
+                        <td style="width:23%">الثلاثاء 3 أكتوبر 2015</td>
+                        <td style="width:23%" class="num">606</td>
+                        <td style="width:23%" class="num">12345</td>
+                        <td style="width:2%" class="action"><span class="fa fa-chevron-left"></span></td>
+                    </tr>
+                   
+                </table>
+            </div>
+                
+            <div class="dataTableFormBody">
+                <div class="dataTableFormTitle">معاينة فترة</div>
+                <table class="dataTableForm">
+                    <tr><td><label>تاريخ الافتتاح</label></td>
+                        <td>الاثنين 4 يناير 2015</td>
+                    </tr>
+                    <tr><td><label>تاريخ الاقفال</label></td>
+                        <td>الاثنين 4 يناير 2015</td>
+                    </tr>
+                    <tr><td><label>عدد الأيام</label></td>
+                        <td class="num">5</td>
+                    </tr>
+                    <tr><td><label>إجمالي عدد المعاملات</label></td>
+                        <td class="num">606</td>
+                    </tr>
+                    <tr><td><label>إجمالي مبلغ المعاملات</label></td>
+                        <td class="num">12346</td>
+                    </tr>
+                    <tr><td><label>الحالة</label></td>
+                        <td><span class="close">مقفل</span></td>
+                    </tr>
+                
+                </table>
+                
+                <div class="dataTableFormBtns">
+                    <div class="redBtn fa fa-times" onclick=""><span>إقفال الفترة</span></div>
+                    <div class="blueBtn fa fa-share left" onclick="backToList()"><span>عودة إلى اللائحة</span></div>
+                </div>
+            </div> <!--dataTableFormBody-->
+                
+			</div> <!-- side side -->
+            </div> <!-- container -->
+          
+            <div class="dataTableOptions">
+                <div class="dataTableOptionsHeader">خيارات عرض البيانات</div>
+                <table>
+                    <tr>
+                        <td><label for="">البحث في التصنيفات:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="أكتب اسم تصنيف للبحث عنه"></td>
+                    </tr>
+                </table>
+            </div>

@@ -1,0 +1,49 @@
+<div class="dataTableHeader">
+  <table class="dataTableHeadRow">
+	  <tr>
+		<td style="width:8%">&nbsp</td>
+		<td style="width:20%">الإضافة</td>
+		<td style="width:70%">وصف قصير</td>
+		<td style="width:2%" class="action">&nbsp;</td>
+	  </tr>
+  </table>
+</div>
+
+<div class="dataTableContainer">
+
+<div class="sideSideContainer">
+<div class="dataTableBody">
+	<table class="dataTable">
+		<tr onclick="listItemClick()">
+		<td style="width:8%"><div class="fa fa-cube"></div></td>
+		<td style="width:20%">إدارة المخزون</td>
+		<td style="width:70%" class="dataTableDesc">تتبع المخزون ووضع عين على كل الداخلات والخارجات من وإلى مخزونكم، عرض التقارير والإحصاءات والإشعار بالمخزونات المنخفضة.</td>
+		<td style="width:2%" class="action"><span class="fa fa-chevron-left"></span></td>
+		</tr>
+		
+		<tr onclick="listItemClick()">
+		<td style="width:8%"><div class="fa fa-cube"></div></td>
+		<td style="width:20%">إدارة المخزون</td>
+		<td style="width:70%" class="dataTableDesc">تتبع المخزون ووضع عين على كل الداخلات والخارجات من وإلى مخزونكم، عرض التقارير والإحصاءات والإشعار بالمخزونات المنخفضة.</td>
+		<td style="width:2%" class="action"><span class="fa fa-chevron-left"></span></td>
+		</tr>
+	   
+	</table>
+</div>
+	
+<div class="dataTableFormBody">
+	<div class="dataTableFormTitle">تفاصيل الإضافة</div>
+	<table class="dataTableForm">
+		<tr><td style="font-weight:normal;">تتبع المخزون ووضع عين على كل الداخلات والخارجات من وإلى مخزونكم، عرض التقارير والإحصاءات والإشعار بالمخزونات المنخفضة. >تتبع المخزون ووضع عين على كل الداخلات والخارجات من وإلى مخزونكم، عرض التقارير والإحصاءات والإشعار بالمخزونات المنخفضة. >تتبع المخزون ووضع عين على كل الداخلات والخارجات من وإلى مخزونكم، عرض التقارير والإحصاءات والإشعار بالمخزونات المنخفضة. >تتبع المخزون ووضع عين على كل الداخلات والخارجات من وإلى مخزونكم، عرض التقارير والإحصاءات والإشعار بالمخزونات المنخفضة.</td>
+			<td></td>
+		</tr>
+	
+	</table>
+	
+	<div class="dataTableFormBtns">
+		<div class="blueBtn fa fa-share left" onclick="backToList()"><span>عودة إلى اللائحة</span></div>
+	</div>
+</div> <!--dataTableFormBody-->
+	
+</div> <!-- side side -->
+</div> <!-- container -->

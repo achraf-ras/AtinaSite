@@ -1,0 +1,27 @@
+<div class="drawerContainer">
+	<div class="drawerOptions">
+		<ul>
+			<li onClick="showCashDrawerViewNoSelect()">ملخص الخزنة</li>
+			<li class="current" onClick="showDrawerInView()">مال داخل</li>
+			<li onClick="showDrawerOutView()">مال خارج</li>
+		</ul>
+	</div>
+	<div class="drawerStats">
+		<div class="drawerStat">المبلغ<br><span>100.76</span></div>
+	</div>
+	<div class="calc">
+		<table>
+			<tr><td>1</td><td>2</td><td>3</td></tr>
+			<tr><td>4</td><td>5</td><td>6</td></tr>
+			<tr><td>7</td><td>8</td><td>9</td></tr>
+			<tr><td>0</td><td>00</td><td><img src="img/clear.png"></td></tr>
+		</table>
+		<div class="chargeBtn greenBtn" onclick="moneyInOutNext()">التالي</div>
+	</div>
+	<div class="moneyInOutDesc">
+		<span>أدخل تعليقًا اختياريًا على هذه العملية.</span><br><br>
+		<span>يساعدك التعليق في التعرف على طبيعة عمليات إدخال\إخراج المال من خزنة النقود.</span><br><br>
+		<input type="text" placeholder="تعليق">
+		<div class="chargeBtn greenBtn" onclick="moneyInOutNext()">تأكيد</div>
+	</div>
+</div>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/عام/خط/درويد_كوفي-عادي.تتف') format('truetype');
+}
+body {
+	margin:0;
+	padding:0;
+	background-color: #989898;
+}
+.content {
+	width: 35%;
+	margin-top: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	font-family: 'Droid Arabic Kufi', sans-serif;
+}
+.form-5 {
+    /* Size and position */
+    width: 300px;
+    margin: 60px auto 30px;
+    position: relative;
+
+    /* Styles */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.1);
+}
+.form-5 p {
+    width: 70%;
+    float: right;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #C8C8C8;
+    border-left: none;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.form-5 input[type=text],
+.form-5 input[type=password] {
+    /* Size and position */
+    width: 100%;
+    height: 50px;
+    /*padding: 0 10px;*/
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    background: white; /* Fallback */
+    background: rgba(255,255,255,0.2);
+    box-shadow: 
+        inset 0 0 10px rgba(255,255,255,0.5);
+
+    /* Font styles */
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    text-indent: 10px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 20px;       
+}
+
+.form-5 input[type=text] {
+    border-bottom: 1px solid #fff; /* Fallback */
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-radius: 0 5px 0 0;
+}
+
+.form-5 input[type=password] {
+    border-top: 1px solid #CCC; /* Fallback */
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0 0 5px 0;
+}
+.form-5 input[type=text]:hover,
+.form-5 input[type=password]:hover,
+.form-5 input[type=text]:focus,
+.form-5 input[type=password]:focus {
+    background: #f7def7; /* Fallback */
+    background: rgba(255,255,255,0.4);
+    outline: none;
+}
+
+.form-5 input::-webkit-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+   font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+.form-5 input:-moz-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+.form-5 input:-ms-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Droid Arabic Kufi', sans-serif;
+}
+
+.form-5 button {
+    /* Size and position */
+    width: 30%;
+    height: 108px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    /* Styles */
+    background: 
+    	url(../images/noise.png), 
+		/*radial-gradient(ellipse at center, #FAEF54 0%,#C1D72E 100%);*/
+		radial-gradient(ellipse at center, #989898 0%,#767575 100%);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow:
+        inset 0 0 4px rgba(255, 255, 255, 0.7), 
+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-left: 1px solid silver;
+    cursor: pointer;  
+    line-height: 102px; /* Same as height */
+}
+
+.form-5 button i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -20px;
+    font-size: 64px;
+    line-height: 109px;
+    color: #585858;
+    opacity: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    transition: all 0.2s ease-out;
+}
+
+.form-5 button span {
+    display: block;
+
+    /* Font styles */ 
+    color: #585858;
+    font-family: 'Droid Arabic Kufi', sans-serif; 
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    transform: rotate(-90deg);
+    transition: all 0.2s linear;
+}
+
+.form-5 button:focus {
+    outline: none;
+}
+
+.form-5 button:hover span,
+.form-5 button:focus span {
+    opacity: 0;
+    transform: rotate(-90deg) translateY(-20px);
+}
+
+.form-5 button:hover i,
+.form-5 button:focus i {
+    opacity: 0.5;
+    right: 0;
+    transition-delay: 0.2s;
+}
+
+/* Click on button */
+
+.form-5 button:active span,
+.form-5 button:active i {
+    transition: none; 
+}
+
+.form-5 button:active span {
+    opacity: 0;
+}
+
+.form-5 button:active i {
+    opacity: 0.5;
+    right: 0;
+    color: #fff;
+}	
+</style>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/خط_أوسوم.سمة">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="content" dir="rtl">
+		<div class="logoIcon"><img src="/عام/صور/شعار.بنج"></div>
+		<form class="form-5 clearfix">
+			<p>
+				<input type="text" id="login" name="login" placeholder="اسم المستخدم">
+				<input type="password" name="password" id="password" placeholder="كلمة المرور"> 
+			</p>
+			<button type="button" name="submit" onClick="window.location.href ='main.html';">
+				<i class="fa fa-arrow-left"></i>
+				<span>دخول</span>
+			</button>     
+		</form>
+	</div>
+	<div class="footer">
+		<p></p>
+	</div>
+</body>
+</html>

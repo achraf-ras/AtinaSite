@@ -1,0 +1,31 @@
+ <div class="drawerContainer">
+          <div class="drawerOptions">
+            <ul>
+                <li class="current" onClick="showCashDrawerViewNoSelect()">ملخص الخزنة</li>
+                <li onClick="showDrawerInView()">مال داخل</li>
+                <li onClick="showDrawerOutView()">مال خارج</li>
+            </ul>
+          </div>
+
+<div class="drawerStats">
+            <div class="drawerStat">الرصيد الحالي (متوقع)<br><span>277.90</span></div>
+            <div class="drawerStat">المعاملات اليوم<br><span>19</span></div>
+            <div class="drawerStat">مبلغ معاملات اليوم<br><span>100.76</span></div>
+          </div>
+          <div class="drawerDetails">
+            <table>
+                <tr><td>رصيد الافتتاح</td><td>500.00</td></tr>
+                <tr><td>معاملات اليوم</td><td>3</td></tr> 
+                <tr><td>مبلغ معاملات اليوم</td><td>200.00</td></tr>
+                <tr><td>مال داخل</td><td>0.00</td></tr>
+                <tr><td>مال خارج</td><td>0.00</td></tr>
+                <tr><td>الرصيد المتوقع</td><td>700.00</td></tr>
+                <tr><td>القيمة المضافة اليوم</td><td>201.22+</td></tr>
+            </table>
+          </div>
+          <div class="drawerBtns">
+              <div class="whiteBtn">طباعة تقرير الخزنة</div>
+              <!--<div class="greenBtn">فتح الدرج</div>-->
+          </div>
+		  
+</div>

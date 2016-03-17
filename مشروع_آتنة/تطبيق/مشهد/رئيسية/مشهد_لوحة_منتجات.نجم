@@ -1,0 +1,86 @@
+<div id="productContainer" class="centerDiv js-masonry" data-masonry-options='{ "itemSelector": ".productSquare", "columWidth": 100, "gutter": 20, "isFitWidth": true, "isOriginLeft": false }'>
+	[[منتجات]]
+		<div class="productSquare {{لون}}" onClick="$('#orderList').load('/سلة/أضف/{{ريف}}');">{{تسمية}}<label class="price">{{ثمن}}</label></div>
+	[[تم]]
+</div>
+
+
+<style>
+#productList {
+    background-color: #D9D9D6;
+    clear: both;
+    width: 100%;
+    height: 48%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+#productContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.productSquare {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    
+    -webkit-box-shadow: 6px 11px 29px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 11px 29px -15px rgba(0,0,0,0.75);
+    box-shadow: 6px 11px 29px -15px rgba(0,0,0,0.75);
+    
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.productSquare:active {
+    -o-box-shadow: 2px 2px 19px #FFCC00;
+    -webkit-box-shadow: 2px 2px 19px #FFCC00;
+     -moz-box-shadow: 2px 2px 19px #FFCC00;
+    position: relative;
+}
+
+label.price{
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 16px;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: Babas;
+    color: #fafafa;
+    text-shadow: 1px 1px 2px rgba(0,0,0, .3);
+    background: #ff8042;
+    background: -moz-linear-gradient(top,  #ff8042 0%, #f55a0e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8042), color-stop(100%,#f55a0e));
+    background: -webkit-linear-gradient(top,  #ff8042 0%,#f55a0e 100%);
+    background: -o-linear-gradient(top,  #ff8042 0%,#f55a0e 100%);
+    background: -ms-linear-gradient(top,  #ff8042 0%,#f55a0e 100%);
+    background: linear-gradient(to bottom,  #ff8042 0%,#f55a0e 100%);
+}
+
+label.price:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: 14px;
+    right: -9px;
+    border-top: 6px solid transparent;
+    border-left: 9px solid #88330a;
+}
+</style>

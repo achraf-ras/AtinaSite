@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="/عام/سمة/نورماليز.سمة" />
+      
+    <script type="text/javascript" src="/عام/جافاسكربت/جكويري.جس"></script>
+      
+    <script>
+        $(function() {
+            $('.content').fadeIn('slow');
+            setTimeout(function() {
+                $('hr:last-child').width(266);
+            }, 2500);
+            setTimeout(function() {
+                $('.brand').show();
+            }, 7000);
+            setTimeout(function() {
+                /*
+                $('body').load('main.html').hide().fadeIn(20, function() {
+                   $('#productContainer').masonry({ "itemSelector": ".productSquare", "columWidth": 100, "gutter": 20, "isFitWidth": true, "isOriginLeft": false });
+                });*/
+                window.location.href = 'دخول'
+                
+            }, 10000);
+            //162 720
+        });
+    </script>
+      
+    <style>
+        @font-face {
+            font-family: 'Droid Arabic Kufi';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/عام/خط/درويد_كوفي-عادي.تتف') format('truetype');
+        }
+        body {
+            /*background: #767575;*/
+            background-color: #4F595A;
+        }
+        .content {
+            display: none;   
+        }
+        .brand {
+            color: white;
+            font-family: 'Droid Arabic Kufi', sans-serif;
+            font-size: 12px;
+            text-align: center;
+            display: none;
+        }
+        [data-logo-loader] {
+            display: table;
+            margin: 0 auto;
+            margin-top: 15%;
+        }
+        [data-logo-loader] hr:first-child {
+            display: block;
+            margin: 0;
+            width: 266px; height: 113px;
+
+            background-image: url("/عام/صور/شعار_كبير.بنج");
+            background-repeat: no-repeat;
+            border: none;
+            opacity: 0.2;
+           
+        }
+        [data-logo-loader] hr:last-child {
+            transition: width 8s;
+            position: absolute;
+            display: block;
+            margin: 0;
+            width: 0px; height: 113px;
+
+            transform: translateY(-100%);
+
+            background-image: url("/عام/صور/شعار_كبير.بنج");
+            background-repeat: no-repeat;
+            background-position: right;
+            border: none;
+        }
+    </style>
+  </head>
+    
+<body>
+    
+    <div class="content">
+    <figure data-logo-loader>
+    <hr>
+    <hr>
+    </figure>
+    <div class="brand">من أصول للأنظمة الذكية</div>
+    </div>
+    
+</body>
+    
+</html>

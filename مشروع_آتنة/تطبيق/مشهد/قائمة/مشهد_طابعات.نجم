@@ -1,0 +1,40 @@
+<div id="printSetup">
+    <div class="printSetupTitle">الطابعات</div>
+    <div class="setupItems">
+        <div class="setupItemRow">
+            <div style="width:40%">طحري143</div>
+            <div style="width:40%" class="num">00:11:62:07:32</div>
+            <div style="width:15%">متصل<span class="connected fa fa-circle"></span></div>
+        </div>
+        <div class="setupItemRow">
+            <div style="width:40%">طحري143</div>
+            <div style="width:40%" class="num">00:11:62:07:32</div>
+            <div style="width:15%">منفصل<span class="disconnected fa fa-circle"></span></div>
+        </div>
+        <div class="setupItemRow">
+            <div style="width:40%">طحري143</div>
+            <div style="width:40%" class="num">00:11:62:07:32</div>
+            <div style="width:15%">منفصل<span class="disconnected fa fa-circle"></span></div>
+        </div>
+    </div>
+    
+    
+    <div class="printSetupTitle">الإيصالات</div>
+    <div class="setupItems">
+        <div class="setupItemRow">
+            <div style="width:30%">نص رأس الإيصال:</div>
+            <div style="width:60%">أهلا بالكرام عندنا</div>
+            <div class="edit" style="width:5%; font-size:10px;">تعديل</div>
+        </div>
+        <div class="setupItemRow">
+            <div style="width:30%">نص ذيل الإيصال:</div>
+            <div style="width:60%">شكرا على زيارتكم، في انتظار عودتكم</div>
+            <div class="edit" style="width:5%; font-size:10px;">تعديل</div>
+        </div>
+    </div>
+</div>
+
+<div id="printSetupBtns">
+    <div class="whiteBtn fa fa-refresh right"><span>تحديث</span></div>
+    <div class="whiteBtn fa fa-print left"><span>تجريب الطباعة</span></div>
+</div>

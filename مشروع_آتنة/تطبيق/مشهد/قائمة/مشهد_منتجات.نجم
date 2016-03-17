@@ -1,0 +1,223 @@
+<div class="dataTableHeader">
+	<table class="dataTableHeadRow">
+		<tr>
+			<td>الكمية</td>
+			<td>&nbsp;</td>
+			<td>التصنيف</td>
+			<td>ثمن البيع</td>
+			<td>الرمز الشريطي</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+   
+<div class="dataTableContainer">
+	   
+	<div class="sideSideContainer">
+	<div class="dataTableBody">
+		<table class="dataTable">
+			<tr onclick="listItemClick()">
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>علبة حليب</td>
+				<td>مشتقات الحليب</td>
+				<td>3.5</td>
+				<td>340827630</td>
+				<td><span class="fa fa-chevron-left"></span></td>
+			</tr>
+		</table>
+	</div><!--datatable body-->
+	   
+	<div class="dataTableFormBody">
+		<div class="dataTableFormTitle">معاينة/تعديل منتج</div>
+		<table class="dataTableForm">
+			<tr><td><label for="name">اسم المنتج</label></td>
+				<td><input class="basic-slide" id="name" type="text" placeholder="أدخل اسم المنتج" /></td>
+			</tr>
+			
+			<tr><td><label for="barcode">الرمز الشريطي</label></td>
+				<td><input class="basic-slide" id="barcode" type="number" placeholder="أدخل الرمز الشريطي للمنتج (اختياري)" /></td>
+			</tr>
+			
+			<tr><td><label for="barcode">الكمية المتوفرة</label></td>
+				<td><input class="basic-slide" id="barcode" type="number" placeholder="أدخل الكمية المتوفرة في المخزون" />
+			</td></tr>
+			
+			<tr><td><label for="price">ثمن البيع</label></td>
+				<td><input class="basic-slide" id="price" type="number" placeholder="أدخل ثمن بيع المنتج" />
+			</td></tr>
+			
+			<tr><td><label for="price">تصنيف المنتج</label></td>
+				<td><select id="category" class="basic-slide">
+					<option value="1">مشتقات الحليب</option>
+					<option value="2">حلويات</option>
+					<option value="3">قطاني</option>
+					<option value="4">مواد غذائية</option>
+				</select>
+			</td></tr>
+			
+			<tr><td><label for="tva">نسبة الض.ق.م</label></td>
+				<td><input class="basic-slide" id="tva" type="number" placeholder="نسبة الضريبة على القيمة المضافة (افتراضي 2%)" />
+			</td></tr>
+			
+			<tr><td><label for="color">لون المُلصَق</label></td>
+				<td>
+				<div class="pickcolor">
+					<div class="orange active"></div>
+					<div class="red"></div>
+					<div class="violet"></div>
+					<div class="ultrarose"></div>
+				</div>
+			</td></tr>
+		
+		</table>
+		
+		<div class="dataTableFormBtns">
+			<div class="redBtn fa fa-times" onclick=""><span>حذف</span></div>
+			<div class="greenBtn fa fa-check left"><span>تأكيد التعديلات</span></div>
+			<div class="blueBtn fa fa-share left" onclick="backToList()"><span>عودة إلى اللائحة</span></div>
+		</div>
+	</div> <!--dataTableFormBody-->
+	</div>
+   	   
+</div> <!--datatable container-->
+		
+<div class="dataTableOptions">
+	<div class="dataTableOptionsHeader">خيارات عرض البيانات</div>
+	<table>
+		<tr>
+			<td><label for="">البحث في المنتجات:</label></td><td><label for="">عرض المنتجات حسب التصنيف:</label></td>
+		</tr>
+		<tr>
+			<td><input type="text" placeholder="أكتب اسم منتج للبحث عنه"></td>
+			<td>
+				<select>
+				  <option value="0">الجميع</option>
+				  <option value="1">مشتقات الحليب</option>
+				  <option value="2">حلويات</option>
+				  <option value="3">قطاني</option>
+				  <option value="4">مواد غذائية</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+</div>

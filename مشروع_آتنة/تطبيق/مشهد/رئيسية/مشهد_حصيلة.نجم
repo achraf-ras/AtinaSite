@@ -1,0 +1,92 @@
+	<div class="totalViewRow">
+		<span class="right">الإجمالي الصافي</span>
+		<span class="left num">25.00</span>
+	</div>
+	<div class="totalViewRow">
+		<span class="right">الخصم</span>
+		<span class="left num">0.00</span>
+	</div>
+	<div class="totalViewRow">
+		<span class="right">الضريبة على القيمة المضافة</span>
+		<span class="left num">2.22</span>
+	</div>
+	<div class="totalRow vCenter num">
+		12.63
+	</div>
+	<div class="totalBtn right vCenter">حفظ</div>
+	<div class="totalBtn left vCenter" onclick="$('#orderList').load('/سلة/أفرغ');">إلغاء</div>
+	<div class="validateBtn vCenter" onclick="validateOrderClick()">تأكيد</div>
+
+<style>
+#totalView {  
+    background-color: #767575;
+    width: 30%;
+    float: left;
+    height: 40%;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.totalViewRow {
+    height: 13%;
+}
+
+.totalBtn, .validateBtn {
+    height: 18.4%;
+}
+
+.totalViewRow, .totalRow {
+    color: white;
+    border-bottom: 2px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.totalViewRow span {
+    top: 22%;
+    position: relative;
+}
+
+.totalRow {
+    height: 22%;
+    text-align: left;
+    font-size: 46px;
+}
+.totalBtn {
+    width: 50%;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    -moz-box-shadow: inset 0 0 1px #000000;
+    -webkit-box-shadow: inset 0 0 1px #000000;
+    box-shadow: inset 0 0 1px #000000;
+}
+
+.totalBtn:active {
+    -o-box-shadow: 2px 2px 19px #FFCC00;
+    -webkit-box-shadow: 2px 2px 19px #FFCC00;
+     -moz-box-shadow: 2px 2px 19px #FFCC00;
+    position: relative;
+}
+
+.validateBtn {
+    width: 100%;
+    clear: both;
+    background-color: #C1D72E;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.validateBtn:active {
+    -o-box-shadow: 2px 2px 19px #FFCC00;
+    -webkit-box-shadow: 2px 2px 19px #FFCC00;
+    -moz-box-shadow: 2px 2px 19px #FFCC00;
+    z-index:99;
+    position: relative;
+}
+</style>
